@@ -42,6 +42,10 @@ Summary
 History Log
 =============
 
+- 1.0.3 -- 2021-08-03
+
+    - add postAlcpToast method
+  
 - 1.0.2 -- 2021-08-03
 
     - update conception notes, add precision about time marker

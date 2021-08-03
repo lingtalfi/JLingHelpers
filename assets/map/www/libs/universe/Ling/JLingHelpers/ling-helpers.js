@@ -65,6 +65,41 @@ if ('undefined' === typeof window.LingHelpers) {
                 + date.toTimeString().split(' ')[0];
         },
         /**
+         * A generic alcp call that use toasts to show errors.
+         *
+         * A generic loader is assumed with css id: toast-generic-loader.
+         * It should be "display: none" by default, and we handle its visibility from there (i.e., display:block/none).
+         *
+         * For the toasts, we use the addToast method from this object, with type error for
+         * all alcp errors, and http errors.
+         *
+         * The success callback is passed as it to the AlcpHelper.post method.
+         *
+         *
+         * @param url
+         * @param data
+         * @param success
+         */
+        postAlcpToast: function (url, data, success) {
+            var zis = this;
+            var jLoader = $('#toast-generic-loader');
+
+            var error = function (error, response, textStatus, jqXHR) {
+                zis.addToast(error, "error");
+            };
+            var httpError = function (jqXHR, textStatus, errorThrown) {
+                zis.addToast("Http error: " + errorThrown, "error");
+            };
+
+
+            AlcpHelper.post(url, data, {
+                loader: jLoader,
+                success: success,
+                error: error,
+                httpError: httpError,
+            });
+        },
+        /**
          * Returns a human friendly hint about how far in the past the given date was.
          *
          * Example of returned strings:

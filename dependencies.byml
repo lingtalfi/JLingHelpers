@@ -1,3 +1,7 @@
-dependencies: []
+dependencies: 
+    Ling: 
+        - JAlcp
+    
+
 post_install: 
     map: true
