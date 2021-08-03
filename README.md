@@ -30,12 +30,22 @@ Or just download it and place it where you want otherwise.
 
 
 
+Summary
+===========
+- [Conception notes](https://github.com/lingtalfi/JLingHelpers/blob/master/personal/mydoc/pages/conception-notes.md)
+
+
+
 
 
 
 History Log
 =============
 
+- 1.0.1 -- 2021-08-03
+
+    - update README, add link to conception notes
+    
 - 1.0.0 -- 2021-08-03
 
     - initial commit
