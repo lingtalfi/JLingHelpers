@@ -61,7 +61,7 @@ We provide the following conventions that you can use to your advantage:
 - **.type-marker**: if such an element is found, we will add some css class to it, based on the toast type argument.
     The map of toast_type => css_class_to_add is customizable via the _toastOptions.
     The goal of this element is to provide a color hint about the toast type (i.e., red for error, green for success, etc...).
-- **.time-marker**: if such an element is found, we will add a time hint about the time the toast was printed.
+- **.time-marker**: if such an element is found, we will add a time hint about the time the toast was printed (and refresh it every second).
     This time hint works in reverse (i.e., just now, 10 seconds ago, 1 minute ago, 2 hours 37 minutes ago, etc...).
 
 

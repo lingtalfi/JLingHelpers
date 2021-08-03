@@ -42,6 +42,10 @@ Summary
 History Log
 =============
 
+- 1.0.2 -- 2021-08-03
+
+    - update conception notes, add precision about time marker
+  
 - 1.0.1 -- 2021-08-03
 
     - update README, add link to conception notes
